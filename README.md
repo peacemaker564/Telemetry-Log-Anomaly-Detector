@@ -2,6 +2,7 @@
 The program successfully detects anomalies(problematic) metrics from a set of simulated telemetry logs. 
 
 Main Algorithm:
+
 Part - I (data creation)
 1. Created artificial site codes(location) to simulate real telemetry logs.
 2. Introduced basic network parameters such as latency, status code, and packet loss percent to start detecting anomalies.
