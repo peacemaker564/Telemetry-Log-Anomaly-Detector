@@ -28,7 +28,7 @@ Part - II (SQL & Database Pipeline)
 Part - III (Pandas Integration & Machine Learning)
 1. Created the final engine script, network_ai_detector.py, moving away from manually hardcoded SQL logic and switching to programmatic, pattern-based anomaly detection.
 2. Utilized the pandas data science library to run an internal query against the SQLite database, converting the static relational table instantly into an in-memory data matrix (DataFrame).
-3. Extracted the continuous numerical features—specifically isolating latency_ms and packet_loss_percent—to pass directly to the machine learning model.
+3. Extracted the continuous numerical features specifically isolating latency_ms and packet_loss_percent to pass directly to the machine learning model.
 4. Imported and initialized the Isolation Forest unsupervised machine learning algorithm from scikit-learn to map and isolate anomalous behavior using two critical parameters:
    contamination=0.02: Calibrated the AI's sensitivity dial to expect roughly a 2% outlier distribution across the dataset.
    random_state=42: Locked the random split generation seed to guarantee the exact same deterministic, repeatable results across any system execution.
