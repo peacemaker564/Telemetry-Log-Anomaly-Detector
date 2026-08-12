@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect("sasktel_network.db") #Connection
+conn = sqlite3.connect("my_network.db") #Connection
 cur = conn.cursor()
 
 cur.execute("""
@@ -16,3 +16,5 @@ for logs in high_latency_logs:
 
 
 print(f"Alert found: {len(high_latency_logs)}!")
+
+
